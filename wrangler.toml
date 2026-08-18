@@ -1,0 +1,7 @@
+name = "twin-cities-performing-arts"
+main = "src/worker.js"
+compatibility_date = "2026-08-01"
+
+[vars]
+CALENDAR_NAME = "Twin Cities Performing Arts"
+

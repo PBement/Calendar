@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Twin Cities Performing Arts//Master Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Twin Cities Performing Arts
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:welcome@twin-cities-performing-arts
+DTSTAMP:20260818T120000Z
+DTSTART;VALUE=DATE:20260818
+DTEND;VALUE=DATE:20260819
+SUMMARY:Twin Cities Performing Arts calendar setup
+DESCRIPTION:This seed file confirms the calendar format. Deploy the included feed service and subscribe to its /calendar.ics URL for live events from all included organizations.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR

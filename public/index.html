@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Twin Cities Performing Arts Calendar</title>
+<style>
+  body{font:18px system-ui;max-width:720px;margin:10vh auto;padding:24px;line-height:1.55;color:#17202a}
+  a.button{display:inline-block;background:#512da8;color:#fff;padding:14px 20px;border-radius:10px;text-decoration:none}
+  code{word-break:break-all;background:#f3f3f5;padding:3px 6px}
+</style>
+<h1>Twin Cities Performing Arts</h1>
+<p>A subscription calendar aggregating major Minneapolis–Saint Paul performing-arts organizations.</p>
+<p><a class="button" id="subscribe" href="calendar.ics">Subscribe in Apple Calendar</a></p>
+<p>Subscription URL: <code id="url"></code></p>
+<script>
+  const httpsUrl = new URL("calendar.ics", location.href).href;
+  document.querySelector("#url").textContent = httpsUrl;
+  document.querySelector("#subscribe").href = httpsUrl.replace(/^https:/, "webcal:");
+</script>
+</html>
+

@@ -1,0 +1,14 @@
+{
+  "name": "twin-cities-performing-arts-calendar",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check src/worker.js && node test/test.mjs",
+    "generate": "node scripts/generate.mjs",
+    "deploy": "npx wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.31.0"
+  }
+}
